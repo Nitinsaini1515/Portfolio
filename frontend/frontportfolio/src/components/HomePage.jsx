@@ -6,10 +6,10 @@ const HomePage = () => {
   return (
     <>
       <div className="min-h-[calc(100vh-60px)] w-full flex justify-center items-center px-10">
-        <div className="flex justify-center items-center max-w-6xl gap-32 ">
+        <div className="flex justify-center items-center max-w-6xl gap-60 ">
           {/* text */}
 
-          <div className="ml-20 w-270 gap-5 flex flex-col">
+          <div className="ml-10 w-270 gap-5 flex flex-col">
             <div className="border border-black w-90 rounded-3xl flex justify-center items-center p-1 float-animation">
               B.Tech CSE Student • Full Stack Developer
             </div>
@@ -46,22 +46,20 @@ const HomePage = () => {
           </div>
           {/* photo */}
           <div className="w-1/2 ">
-          <span >
-          < CodeCard/>
-
-          </span>
-          <div className="border p-10 border-gray-200 rounded-full h-100 w-100">
-
-            <img
-              className="border-gray-500 border h-80 w-80 rounded-full"
-              src="./image.png"
-              alt="MyImage"
-            />
-            <span className="border font-mono text-sm font-semibold border-black w-35 rounded-2xl flex flex-col ml-60 justify-center items-center p-1 float-animation">
-          Turning Ideas
-          <div>Into Reality</div>
+            <span>
+              <CodeCard />
             </span>
-          </div>
+            <div className="border p-10 border-gray-200 rounded-full h-100 w-100">
+              <img
+                className="border-gray-500 border h-80 w-80 rounded-full"
+                src="./profilepic.png"
+                alt="MyImage"
+              />
+              <span className="border font-mono text-sm font-semibold border-black w-35 rounded-2xl flex flex-col ml-60 justify-center items-center p-1 float-animation">
+                Turning Ideas
+                <div>Into Reality</div>
+              </span>
+            </div>
           </div>
         </div>
       </div>
