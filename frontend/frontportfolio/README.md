@@ -1,16 +1,45 @@
-# React + Vite
+# 🚀 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built to showcase my skills, projects, education, and experience as a Full Stack Developer.
 
-Currently, two official plugins are available:
+## 📅 Day 1 — Project Setup & Home Page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### What I worked on today
 
-## React Compiler
+* Set up the React project using Vite.
+* Configured Tailwind CSS for styling.
+* Created the basic project structure.
+* Built the initial Home/Hero section.
+* Added a developer introduction section.
+* Added animated text to introduce my role and skills.
+* Started working on the dark/black modern UI theme.
+* Added a code-card style component to make the hero section more interactive.
+* Worked on positioning images and UI elements using Tailwind CSS.
+* Added responsive styling for different screen sizes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* React.js
+* Vite
+* Tailwind CSS
+* JavaScript
+* HTML
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎯 Goal
+
+The goal of this project is to build a clean, professional, and interactive portfolio that represents my development journey, technical skills, projects, and achievements.
+
+### 📌 Progress
+
+**Day 1:** ✅ Project setup + Home Page
+
+More sections and features will be added as the development continues.
+
+---
+
+### 👨‍💻 Developer
+
+**Nitin Saini**
+
+Full Stack Developer | React Developer | Problem Solver
