@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import CertificationPage from "./components/CertificationPage";
 import MyProjects from "./components/MyProjects";
 import ContactMe from "./components/ContactMe";
+import ProjectCard from "./components/uiComponents/ProjectCard";
 import ThreeVantaComponent from "./components/ThreeVantaComponent";
 
 const App = () => {
@@ -21,6 +22,8 @@ const App = () => {
           <MyProjects />
           <CertificationPage />
           <ContactMe />
+          <ProjectCard />
+          
         </main>
     </div>
     // <div className="relative min-h-screen bg-black text-white">

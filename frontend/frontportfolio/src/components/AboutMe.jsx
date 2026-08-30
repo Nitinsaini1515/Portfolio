@@ -11,8 +11,8 @@ const AboutMe = () => {
         </div>
 
         {/*left  side text */}
-        <div className="gap-80 flex">
-          <div className="w-2/4 h-130 p-5 mt-10 ml-30 rounded-xl shadow-md shadow-black/20">
+        <div className=" gap-40 flex">
+          <div className=" w-3xl h-130 p-5 mt-10 ml-25 rounded-xl shadow-md shadow-black/20">
             <h1 className="text-4xl font-bold mb-4">Journey & Education</h1>
             <h1  className="text-xl font-bold mt-4 mb-4">A developer who loves to build and learn.</h1>
             <div>
@@ -47,9 +47,10 @@ const AboutMe = () => {
             </div>
           </div>
         {/* right section */}
-          <div>
-
-
+          <div className="mr-20 h-100 mt-10 bg-red-50 w-100">
+        <div className=" ">
+          <img className="w-full h-full" src="./profilepic.png" alt="" />
+        </div>
 
           </div>
         </div>

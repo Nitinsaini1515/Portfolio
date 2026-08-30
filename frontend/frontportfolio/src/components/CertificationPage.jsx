@@ -5,10 +5,10 @@ const CertificationPage = () => {
     <>
       <div>
 {/* header section */}
-<header>
-  <h2>Achievements</h2>
-  <h1>My Certificates</h1>
-</header>
+<div className='w-150 h-30 ml-65 mt-40'>
+  <h2 className='font-bold text-xl '>Achievements</h2>
+  <h1 className='font-bold text-6xl'>My Certificates</h1>
+</div>
 
 <div>
 <div> cer1</div>
