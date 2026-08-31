@@ -22,7 +22,7 @@ const App = () => {
           <MyProjects />
           <CertificationPage />
           <ContactMe />
-          <ProjectCard />
+        
           
         </main>
     </div>
