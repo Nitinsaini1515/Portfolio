@@ -16,3 +16,5 @@ const CertificateCard = ({index,image,name,description}) => {
 
 export default CertificateCard
 
+
+

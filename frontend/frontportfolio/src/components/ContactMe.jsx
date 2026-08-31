@@ -20,15 +20,15 @@ const ContactMe = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="h-170  flex justify-center items-center mt-5">
+        <div className="h-170  flex  justify-center items-center mt-5">
 
           <form
-            className="flex flex-col justify-center items-center w-250 h-150 shadow-lg shadow-black/20 rounded-4xl"
+            className="flex flex-col justify-center items-center w-250  h-160 shadow-lg shadow-black/20 rounded-4xl"
             action="/post"
           >
 
             {/* Form Header */}
-            <div className="flex flex-col h-30 w-200">
+            <div className="flex gap-2 flex-col h-30 w-200">
               <h2 className="font-bold text-xl">SEND MESSAGE</h2>
 
               <h1 className="text-4xl font-bold">
