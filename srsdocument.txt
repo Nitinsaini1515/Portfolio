@@ -1,0 +1,11 @@
+1. choose the perfect theme for the website
+2. make css property for ex ham ek css ki prop change kare to sab jagah jaha jaha wo color use hua hai wha change ho jaye 
+3. animation sahi karna hai skills wala
+4. background animation 
+5. make the navigation in react ->done 
+6. animation on buttons 
+7. change in project links and in certificates 
+8. make the message form backend frontend
+9. add resume 
+10. Make it responsive
+11.learn the things i have used in this 

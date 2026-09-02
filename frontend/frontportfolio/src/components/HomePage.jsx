@@ -1,7 +1,9 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import CodeCard from "./uiComponents/CodeCard";
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faLinkedin,faInstagram,faWhatsapp} from  "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const HomePage = () => {
   return (
     <>
@@ -43,6 +45,18 @@ const HomePage = () => {
                 Contact Me
               </button>
             </div>
+
+{/* icons */}
+            <section className=" h-15 w-70 mt-5 flex justify-center items-center gap-5">
+              {/* linkedin */}
+              <a href="" className=" border-amber-300 "><FontAwesomeIcon className=" text-4xl h-full w-full hover:border-amber-500 hover:border-2 rounded-3xl " icon={faLinkedin} /></a>
+              {/* instagram */}
+              <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+              {/* whatsapp */}
+              <a href=""><FontAwesomeIcon icon={faWhatsapp} /></a>
+              {/* Gmail */}
+              <a href=""> <FontAwesomeIcon icon={faEnvelope} /></a>
+            </section>
           </div>
           {/* photo */}
           <div className="w-1/2 ">

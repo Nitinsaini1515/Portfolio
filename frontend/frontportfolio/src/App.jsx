@@ -12,19 +12,27 @@ import ThreeVantaComponent from "./components/ThreeVantaComponent";
 const App = () => {
   return (
     <div>
-
-        <Navbar />
-
-        <main>
+      <Navbar />
+        <section id="home">
           <HomePage />
+        </section>
+
+        <section id="skills">
           <SkillsPage />
+        </section>
+        <section id="aboutme">
           <AboutMe />
+        </section>
+        <section id="myproject">
           <MyProjects />
+        </section>
+
+        <section id="certification">
           <CertificationPage />
+        </section>
+        <section id="contactme">
           <ContactMe />
-        
-          
-        </main>
+        </section>
     </div>
     // <div className="relative min-h-screen bg-black text-white">
 
@@ -33,7 +41,7 @@ const App = () => {
 
     //   {/* Website Content */}
     //   <div className="relative z-10">
-      // </div>
+    // </div>
 
     // </div>
   );

@@ -1,6 +1,11 @@
 import React from "react";
 
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <div className=" font-sans  flex justify-center items-center gap-85 h-15 bg-gray-50  shadow-[0_4px_25px_rgba(0,0,0,0.10)]">
@@ -9,30 +14,48 @@ const Navbar = () => {
 
         {/* middle section */}
         <div className="flex gap-10 cursor-pointer font-medium">
-          <span className="relative group ">
+          <button
+            onClick={() => scrollToSection("home")}
+            className="relative group "
+          >
             Home
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300  "></span>
-          </span>
-          <span className="relative group">
+          </button>
+          <button
+            onClick={() => scrollToSection("skills")}
+            className="relative group"
+          >
             Skils
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300"></span>
-          </span>
-          <span className="relative group">
-            Certificates
+          </button>
+          <button
+            onClick={() => scrollToSection("certification")}
+            className="relative group"
+          >
+            Certifications
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300 "></span>
-          </span>
-          <span className="relative group">
-            Resume
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300"></span>
-          </span>
-          <span className="relative group">
+          </button>
+          <button
+            onClick={() => scrollToSection("myproject")}
+            className="relative group"
+          >
+            projects
+            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300 "></span>
+          </button>
+          <button
+            onClick={() => scrollToSection("aboutme")}
+            className="relative group"
+          >
             About us
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300"></span>
-          </span>
-          <span className="relative group">
+          </button>
+          <button
+            onClick={() => scrollToSection("contactme")}
+            className="relative group"
+          >
             Contact us
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300"></span>
-          </span>
+          </button>
         </div>
 
         {/* right section */}
