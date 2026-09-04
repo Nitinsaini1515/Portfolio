@@ -20,15 +20,15 @@ const App = () => {
         <section id="skills">
           <SkillsPage />
         </section>
-        <section id="aboutme">
-          <AboutMe />
+        <section id="certification">
+          <CertificationPage />
         </section>
         <section id="myproject">
           <MyProjects />
         </section>
 
-        <section id="certification">
-          <CertificationPage />
+        <section id="aboutme">
+          <AboutMe />
         </section>
         <section id="contactme">
           <ContactMe />

@@ -24,25 +24,29 @@ const AboutMe = () => {
               problem-solving, every experience helps me grow as a developer.
             </div>
             {/* bpx */}
-            <div className=" flex gap-10 w-auto ">
+            <div className=" flex gap-10  ">
 
               {/* higher */}
-              <div className="shadow-md shadow-black/20 p-5 m-5">
-                <div>B.Tech — Computer Science & Engineering</div>
+              <div className="shadow-md w-70 shadow-black/20 p-5 m-5">
+                <div>Degree: B.Tech — Computer Science & Engineering</div>
                 <div>CGC College of Engineering, Landran</div>
-                <button>Currently pursuing </button>
+                <div>Year: 2024 – 2028</div>
+                <div>Status: Pursuing</div>
               </div>
                   {/* sr secondary */}
-              <div className="shadow-md shadow-black/20 p-5 m-5">
-                <div>B.Tech — Computer Science & Engineering</div>
-                <div>CGC College of Engineering, Landran</div>
-                <button>Currently pursuing </button>
+              <div className="shadow-md  w-70 shadow-black/20 p-5 m-5">
+                <div>Senior Secondary (12th)</div>
+                <div>School: GMSSS, Raipur Rani</div>
+                <div>Year: 2023 </div>
+                <div>Result : 72%</div>
+              
               </div>
       {/* secondary */}
-              <div className="shadow-md shadow-black/20 p-5 m-5">
-                <div>B.Tech — Computer Science & Engineering</div>
-                <div>CGC College of Engineering, Landran</div>
-                <button>Currently pursuing </button>
+              <div className="shadow-md w-70 shadow-black/20 p-5 m-5">
+                <div>Secondary (10th)</div>
+                <div>School: Aggarsen Senior Secondary School</div>
+                <div>Year: 2021 </div>
+                <div>Result: 94%</div>
               </div>
             </div>
           </div>

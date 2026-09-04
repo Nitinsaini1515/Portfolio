@@ -46,16 +46,16 @@ const HomePage = () => {
               </button>
             </div>
 
-{/* icons */}
-            <section className=" h-15 w-70 mt-5 flex justify-center items-center gap-5">
+        {/* icons */}
+            <section className=" h-15 w-75 mt-5 flex justify-center items-center gap-10">
               {/* linkedin */}
-              <a href="" className=" border-amber-300 "><FontAwesomeIcon className=" text-4xl h-full w-full hover:border-amber-500 hover:border-2 rounded-3xl " icon={faLinkedin} /></a>
+              <a href="" className=" w-15"><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faLinkedin} /></a>
               {/* instagram */}
-              <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+              <a className=" w-15  " href=""><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faInstagram} /></a>
               {/* whatsapp */}
-              <a href=""><FontAwesomeIcon icon={faWhatsapp} /></a>
+              <a className=" w-15 " href=""><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faWhatsapp} /></a>
               {/* Gmail */}
-              <a href=""> <FontAwesomeIcon icon={faEnvelope} /></a>
+              <a className=" w-15  " href=""> <FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faEnvelope} /></a>
             </section>
           </div>
           {/* photo */}

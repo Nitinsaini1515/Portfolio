@@ -25,7 +25,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("skills")}
             className="relative group"
           >
-            Skils
+            Skills
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300"></span>
           </button>
           <button
@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("myproject")}
             className="relative group"
           >
-            projects
+            Projects
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300 "></span>
           </button>
           <button
