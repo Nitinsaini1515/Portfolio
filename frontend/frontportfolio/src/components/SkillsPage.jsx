@@ -1,4 +1,6 @@
 import React from "react";
+// import SkillsCard from "./uiComponents/SkillsCard";
+import SkillsCard from "./uiComponents/skillsCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -8,11 +10,66 @@ import {
   faCss3Alt,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
-
 import {
   faDatabase,
   faCode,
+  faE,
 } from "@fortawesome/free-solid-svg-icons";
+const skillArr = [
+  {
+    icon: faHtml5,
+    name: "HTML",
+    description: "Structure",
+  },
+  {
+    icon: faCss3Alt,
+    name: "CSS",
+    description: "Styling",
+  },
+  {
+    icon: faJs,
+    name: "JavaScript",
+    description: "Interaction",
+  },
+  {
+    icon: faReact,
+    name: "React",
+    description: "UI & Components",
+  },
+  {
+    icon: faNodeJs,
+    name: "Node.js",
+    description: "Backend & API",
+  },
+  {
+    icon: faCode,
+    name: "Express.js",
+    description: "Backend & API",
+  },
+  {
+    icon: faDatabase,
+    name: "MongoDB",
+    description: "Database",
+  },
+  {
+    icon: faGitAlt,
+    name: "Git/GitHub",
+    description: "Version Control",
+  },
+  {
+    icon: faCode,
+    name: "DSA",
+    description: "Logic & Algorithms",
+  },
+  {
+    icon: faCode,
+    name: "C++",
+    description: "Programming & DSA",
+  },
+];
+
+
+
 const SkillsPage = () => {
   return (
     <>
@@ -26,68 +83,24 @@ const SkillsPage = () => {
           {/* left side animation */}
 
           <div className="w-1/4">
-            {/* image / label center me skill aye and uske circle me sab skills aaye  */}
+            {/* heading */}
 
-            <div className="flex justify-center items-center flex-col border-blue-200 border-2 rounded-full h-95 w-95">
-              <div className="flex justify-center items-center flex-col border-2 rounded-full h-70 w-70">
-                <div className="flex justify-center items-center flex-col border-2 rounded-full h-55 w-55">
-                  <div className="flex justify-center items-center flex-col border-2 rounded-full h-40 w-40">
-                    <img src="../../public/skills.png" alt="" name="skills" />
-                    <label htmlFor="Skills">Skills</label>
+<div>
+    Skills
+</div >
+<div className="grid grid-cols-3 shadow-xs shadow-black/20  rounded-2xl w-160 h-160 top-5 overflow-y-scroll">
 
-                    <div className="relative">
+{skillArr.map((skill ,index)=>{
+return (
+<SkillsCard key = {index}
+icon = {skill.icon}
+name ={skill.name}
+description  = {skill.description}
+  />
+)
+})}
 
-                      <div className=" absolute -mt-40">
-                <FontAwesomeIcon icon={faReact} />
-                <label htmlFor="react">React</label>
-              </div>
-
-              <div className="absolute -ml-20 -mb-30 -mt-40">
-              <FontAwesomeIcon icon={faNodeJs} />
-                <label htmlFor="react">Node.js</label>
-              </div>
-              {/* <div>
-             <FontAwesomeIcon icon={faE} />
-                <label htmlFor="react">Express.js</label>
-              </div> */}
-
-              <div>
-             <FontAwesomeIcon icon={faDatabase} />
-                <label htmlFor="react">MongoDB</label>
-              </div>
-
-              <div>
-             <FontAwesomeIcon icon={faHtml5} />
-                <label htmlFor="react">HTML</label>
-              </div>
-
-              <div>
-             <FontAwesomeIcon icon={faCss3Alt} />
-                <label htmlFor="react">CSS</label>
-              </div>
-
-              <div>
-             <FontAwesomeIcon icon={faJs} />
-                <label htmlFor="react">JS</label>
-              </div>
-
-              <div>
-             <FontAwesomeIcon icon={faCode} />
-                <label htmlFor="react">Problem solving</label>
-              </div>
-              <div>
-             <FontAwesomeIcon icon={faGitAlt} />
-                <label htmlFor="react">Git/GitHub</label>
-              </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
+</div>
           </div>
           {/* right side */}
           <div className=" w-1/2 text-xl ">
