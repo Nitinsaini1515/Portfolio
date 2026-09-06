@@ -13,26 +13,31 @@ const App = () => {
   return (
     <div>
       <Navbar />
-        <section id="home">
+        
+      <main className="">
+
+   
+        <section id="home" className="scroll-mt-20">
           <HomePage />
         </section>
 
-        <section id="skills">
+        <section id="skills" className="scroll-mt-20">
           <SkillsPage />
         </section>
-        <section id="certification">
+        <section id="certification" className="scroll-mt-20">
           <CertificationPage />
         </section>
-        <section id="myproject">
+        <section id="myproject" className="scroll-mt-20">
           <MyProjects />
         </section>
 
-        <section id="aboutme">
+        <section id="aboutme" className="scroll-mt-20">
           <AboutMe />
         </section>
-        <section id="contactme">
+        <section id="contactme" className="scroll-mt-20">
           <ContactMe />
         </section>
+           </main>
     </div>
     // <div className="relative min-h-screen bg-black text-white">
 

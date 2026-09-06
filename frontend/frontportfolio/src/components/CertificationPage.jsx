@@ -75,7 +75,7 @@ const CertificationPage = () => {
   <h1 className='font-bold text-6xl'>My Certificates</h1>
 </div>
 
-<div className='gap-10 shadow-sm h-170 shadow-black/20 flex flex-wrap mt-10 w-350 ml-20 outline-none resize-none '>
+<div className=' border-2 shadow-xs h-170 overflow-y-scroll shadow-black/20 flex flex-wrap mt-10 '>
 {certi.map((certi,index)=>{
 return(
 <CertificateCard

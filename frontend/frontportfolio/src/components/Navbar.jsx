@@ -8,7 +8,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className=" font-sans  flex justify-center items-center gap-85 h-15 bg-gray-50  shadow-[0_4px_25px_rgba(0,0,0,0.10)]">
+      <div className=" top-0 fixed left-0 w-full font-sans  flex justify-center items-center gap-85 h-15 bg-gray-50  shadow-[0_4px_25px_rgba(0,0,0,0.10)]">
         {/* logo */}
         <div className="font-bold ">PORTFOLIO</div>
 

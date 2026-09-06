@@ -49,7 +49,7 @@ const projects = [
 
 const MyProjects = () => {
   return (
-    <div>
+    <div className='mt-40 mb-20'>
       {/* header section */}
     <div className='ml-60 w-170 h-30 mt-20 flex flex-col justify-center items-center'>
       <h1 className='font-bold text-sm'>MY WORK</h1>

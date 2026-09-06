@@ -5,12 +5,11 @@ const ContactMe = () => {
   return (
     <>
       <div className="w-full">
-
         {/* Header */}
-        <div className="ml-65 flex flex-col gap-4 mt-30 h-30 w-200">
+        <div className="ml-65 flex flex-col gap-4 mb-20 mt-30 h-30 w-200">
           <h2 className="font-bold text-xl">Get in touch</h2>
 
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-5xl font-bold">
             Have Something in Mind
           </h1>
 
