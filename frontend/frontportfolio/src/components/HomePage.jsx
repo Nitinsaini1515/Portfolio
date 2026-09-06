@@ -49,13 +49,13 @@ const HomePage = () => {
         {/* icons */}
             <section className=" h-15 w-75 mt-5 flex justify-center items-center gap-10">
               {/* linkedin */}
-              <a href="" className=" w-15"><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faLinkedin} /></a>
+              <a href="https://www.linkedin.com/in/nitin-saini-ba1a64354/" className=" w-15"><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faLinkedin} /></a>
               {/* instagram */}
-              <a className=" w-15  " href=""><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faInstagram} /></a>
+              <a className=" w-15  " href="https://www.instagram.com/nitin_saini0234?stkn=bHRycXY2OHlqcWxu&utm_source=qr"><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faInstagram} /></a>
               {/* whatsapp */}
-              <a className=" w-15 " href=""><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faWhatsapp} /></a>
+              <a className=" w-15 " href="https://wa.me/qr/MPJMSJWLHFNJP1"><FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faWhatsapp} /></a>
               {/* Gmail */}
-              <a className=" w-15  " href=""> <FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faEnvelope} /></a>
+              <a className=" w-15  " href="mailto:nitinsaini07330@gmail.com"> <FontAwesomeIcon className=" text-4xl hover:transition-all duration-200 hover:scale-125 " icon={faEnvelope} /></a>
             </section>
           </div>
           {/* photo */}

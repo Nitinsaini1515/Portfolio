@@ -73,7 +73,7 @@ const skillArr = [
 const SkillsPage = () => {
   return (
     <>
-      <div className="m-20">
+      <div className= "mt-10">
         <div className="ml-60 h-30 w-150  flex flex-col justify-center items-center ">
           <div className="font-bold text-sm flex-none ">Technologies</div>
           <div className="font-bold text-6xl">Skills i work with </div>
@@ -103,7 +103,7 @@ description  = {skill.description}
 </div>
           </div>
           {/* right side */}
-          <div className=" w-1/2 text-xl ">
+          <div className=" w-150 -mt-70 ml-20 text-xl ">
             <div className="font-bold text-4xl mb-5">
               Turning Ideas Into Products
             </div>

@@ -64,9 +64,9 @@ const Navbar = () => {
           <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
 
           {/* Text */}
-          <span className="relative z-10 font-medium text-xl text-black group-hover:text-white transition-colors duration-300">
+          <a href="./resume.pdf"  className="relative z-10 font-medium text-xl text-black group-hover:text-white transition-colors duration-300">
             Resume
-          </span>
+          </a>
         </div>
       </div>
     </div>
