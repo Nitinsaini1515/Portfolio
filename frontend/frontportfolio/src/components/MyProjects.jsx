@@ -1,84 +1,79 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ProjectCard from './uiComponents/ProjectCard'
+import ProjectCard from "./uiComponents/ProjectCard";
+ 
 const projects = [
   {
-    icon :"faHandLove",
+    icon: "faHandLove",
     title: "Portfolio Website",
     description: "My personal portfolio website.",
     linkOfWebsite: "https://github.com/Nitinsaini1515",
-    repoLink: "https://github.com/Nitinsaini1515"
+    repoLink: "https://github.com/Nitinsaini1515",
   },
   {
-    icon :"faHandLove",
+    icon: "faHandLove",
     title: "Portfolio Website",
     description: "My personal portfolio website.",
     linkOfWebsite: "https://github.com/Nitinsaini1515",
-    repoLink: "https://github.com/Nitinsaini1515"
+    repoLink: "https://github.com/Nitinsaini1515",
   },
   {
-    icon :"faHandLove",
+    icon: "faHandLove",
     title: "Portfolio Website",
     description: "My personal portfolio website.",
     linkOfWebsite: "https://github.com/Nitinsaini1515",
-    repoLink: "https://github.com/Nitinsaini1515"
+    repoLink: "https://github.com/Nitinsaini1515",
   },
   {
-    icon :"faHandLove",
+    icon: "faHandLove",
     title: "Portfolio Website",
     description: "My personal portfolio website.",
     linkOfWebsite: "https://github.com/Nitinsaini1515",
-    repoLink: "https://github.com/Nitinsaini1515"
+    repoLink: "https://github.com/Nitinsaini1515",
   },
   {
-    icon :"faHandLove",
+    icon: "faHandLove",
     title: "Portfolio Website",
     description: "My personal portfolio website.",
     linkOfWebsite: "https://github.com/Nitinsaini1515",
-    repoLink: "https://github.com/Nitinsaini1515"
+    repoLink: "https://github.com/Nitinsaini1515",
   },
   {
-    icon :"faHandLove",
+    icon: "faHandLove",
     title: "Portfolio Website",
     description: "My personal portfolio website.",
     linkOfWebsite: "https://github.com/Nitinsaini1515",
-    repoLink: "https://github.com/Nitinsaini1515"
+    repoLink: "https://github.com/Nitinsaini1515",
   },
-  
-]
-
+];
+ 
 const MyProjects = () => {
   return (
-    <div className='mt-40 mb-20'>
+    <div className="mt-20 sm:mt-32 mb-20 px-4 sm:px-8">
       {/* header section */}
-    <div className='ml-60 w-170 h-30 mt-20 flex flex-col justify-center items-center'>
-      <h1 className='font-bold text-sm'>MY WORK</h1>
-      <div className='font-bold text-6xl' >Things I've Built</div>
+      <div className="w-full max-w-2xl mx-auto flex flex-col justify-center items-center text-center">
+        <h1 className="font-bold text-sm">MY WORK</h1>
+        <div className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          Things I've built
+        </div>
+      </div>
+ 
+      {/* cards */}
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10
+        w-full max-w-6xl mx-auto rounded-2xl shadow-sm shadow-black/20 p-4"
+      >
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            icon={project.icon}
+            title={project.title}
+            description={project.description}
+            linkOfWebsite={project.linkOfWebsite}
+            githubRepo={project.repoLink}
+          />
+        ))}
+      </div>
     </div>
-
-    {/* cards */}
-    <div className='flex  mt-10  flex-wrap rounded-2xl border-0 w-350 ml-15 shadow-sm shadow-black/20  '>
-
-{
-  projects.map((projects,index)=>{
-    return(
-    <ProjectCard 
-    key={index}
-    icon={projects.icon}
-    title={projects.title}
-    description={projects.description}
-    linkOfWebsite={projects.linkOfWebsite}
-    githubRepo={projects.repoLink}
-    />
-    )
-  })
-}
-    </div>
-
-
-
-    </div>
-  )
-}
-
-export default MyProjects
+  );
+};
+ 
+export default MyProjects;

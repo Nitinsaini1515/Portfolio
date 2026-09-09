@@ -1,6 +1,6 @@
-import React from 'react'
-
-import CertificateCard from './uiComponents/CertificateCard'
+import React from "react";
+import CertificateCard from "./uiComponents/CertificateCard";
+ 
 const certi = [
   {
     image: "/certificates/dell.png",
@@ -15,7 +15,8 @@ const certi = [
   {
     image: "/certificates/codered.png",
     name: "IIT Kanpur Hackathon & Quiz",
-    description: "Certificate of participation in an IIT Kanpur hackathon and quiz.",
+    description:
+      "Certificate of participation in an IIT Kanpur hackathon and quiz.",
   },
   {
     image: "/certificates/bharattech.png",
@@ -25,7 +26,8 @@ const certi = [
   {
     image: "/certificates/buildwithindia.png",
     name: "Build With India Hackathon",
-    description: "Certificate of participation in the Build With India hackathon.",
+    description:
+      "Certificate of participation in the Build With India hackathon.",
   },
   {
     image: "/certificates/codefest.png",
@@ -63,37 +65,36 @@ const certi = [
     description: "Certificate of participation in a 24-hour hackathon.",
   },
 ];
+ 
 const CertificationPage = () => {
   return (
-    <>
-    <div className='flex w-370 ml-5 justify-center items-center'>
-  
-      <div className='h-200  '>
-{/* header section */}
-<div className='w-150  h-30 ml-65 '>
-  <h2 className='font-bold text-xl '>Achievements</h2>
-  <h1 className='font-bold text-6xl'>My Certificates</h1>
-</div>
-
-<div className='  shadow-xs h-170 overflow-y-scroll shadow-black/20 flex flex-wrap mt-10 '>
-{certi.map((certi,index)=>{
-return(
-<CertificateCard
-key = {index}
-image = {certi.image}
-name = {certi.name}
-description={certi.description}
-/>
-
-)
-
-})}
-
-</div>
-      </div>
+    <div className="w-full px-4 sm:px-8 flex justify-center">
+      <div className="w-full max-w-6xl">
+        {/* header section */}
+        <div className="w-full max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
+          <h2 className="font-bold text-lg sm:text-xl">Achievements</h2>
+          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            My Certificates
+          </h1>
         </div>
-    </>
-  )
-}
-
-export default CertificationPage
+ 
+        <div
+          className="shadow-xs shadow-black/20 rounded-2xl max-h-[720px] overflow-y-scroll
+          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mt-10"
+        >
+          {certi.map((cert, index) => (
+            <CertificateCard
+              key={index}
+              image={cert.image}
+              name={cert.name}
+              description={cert.description}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+ 
+export default CertificationPage;
+ 
