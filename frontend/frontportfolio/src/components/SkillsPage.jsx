@@ -1,7 +1,5 @@
 import React from "react";
-import SkillsCard from "./uiComponents/skillsCard.jsx";
-// import SkillsCard from "./uiComponents/SkillsCard.jsx";
-// import SkillsCard from "./uiComponents/SkillsCard.jsx";
+import SkillsCard from "./uiComponents/SkillsCard.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
