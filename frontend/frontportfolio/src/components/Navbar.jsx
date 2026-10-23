@@ -25,11 +25,11 @@ const Navbar = () => {
     <div>
       <div
         className="top-0 fixed left-0 w-full font-sans flex justify-between md:justify-center
-        items-center gap-6 lg:gap-16 h-15 bg-gray-50 shadow-[0_4px_25px_rgba(0,0,0,0.10)]
-        px-5 md:px-8 z-50"
+        items-center gap-6 lg:gap-16 h-15 
+        px-5 md:px-8 z-50 bg-[#F8F3E8]"
       >
         {/* logo */}
-        <div className="font-bold text-sm sm:text-base">PORTFOLIO</div>
+        <div className="font-bold font-serif sm:text-base text-2xl">NITIN SAINI</div>
  
         {/* middle section - desktop */}
         <div className="hidden md:flex gap-6 lg:gap-10 cursor-pointer font-medium text-sm lg:text-base">
@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
  
         {/* right section - resume button, desktop only */}
-        <div className="hidden md:flex group relative h-10 w-28 lg:w-30 overflow-hidden border-2 border-black rounded-2xl justify-center items-center cursor-pointer">
+        <div  className="hidden md:flex group relative h-10 w-28 lg:w-30 overflow-hidden border-2 border-black rounded-2xl justify-center items-center cursor-pointer ">
           <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
           <a
             href="./resume.pdf"
@@ -68,12 +68,12 @@ const Navbar = () => {
  
       {/* mobile dropdown menu */}
       <div
-        className={`md:hidden fixed top-15 left-0 w-full bg-gray-50 shadow-[0_4px_25px_rgba(0,0,0,0.10)]
+        className={`md:hidden fixed top-15 left-0 w-full 
         flex flex-col items-center gap-6 font-medium overflow-hidden transition-all duration-300 z-40
         ${menuOpen ? "max-h-96 py-6 opacity-100" : "max-h-0 py-0 opacity-0"}`}
       >
         {NAV_ITEMS.map((item) => (
-          <button key={item.id} onClick={() => scrollToSection(item.id)}>
+          <button  key={item.id} onClick={() => scrollToSection(item.id)}>
             {item.label}
           </button>
         ))}

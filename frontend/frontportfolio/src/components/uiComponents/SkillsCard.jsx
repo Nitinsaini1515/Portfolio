@@ -1,16 +1,40 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- 
-const SkillsCard = ({ icon, name, description }) => {
+import { motion } from "motion/react";
+const SkillsCard = ({ icon,title, skills }) => {
   return (
-    <div className="m-2 sm:m-3 md:m-4 rounded-2xl shadow-xs shadow-black/20 aspect-square w-full flex flex-col justify-center items-center gap-1 p-2 text-center">
-      <FontAwesomeIcon icon={icon} className="text-xl sm:text-2xl md:text-3xl" />
-      <label htmlFor="html" className="font-medium text-xs sm:text-sm">
-        {name}
-      </label>
-      <div className="text-[10px] sm:text-xs text-gray-500">{description}</div>
-    </div>
+    
+    <motion.div
+    initial={{ opacity: 0, y: 50, scale: 0.95 }}
+    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+    viewport={{ once: false, amount: 0.2 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+    whileHover={{ y: -8, scale: 1.02 }}
+    className="rounded-2xl bg-[#080B10] text-white p-5 h-60 w-80"
+    >
+           {/* <div> */}
+        {/* <div className="cardDiv text-2xl rounded-2xl  font-semibold font-sans flex flex-col justify-center  items-start pl-5 border border-white/0  opacity-90  bg-[#080B10] h-60 w-80"> */}
+          <div className="flex ">
+            <FontAwesomeIcon
+              className="text-3xl sm:text-4xl hover:scale-125 transition-transform duration-200"
+              icon={icon}
+            />
+            <div>{title}</div>
+          </div>
+          <ul className="text-lg">
+           {skills.map((sk,index)=>{
+            return (
+          <li key={index} >{sk}</li>
+          ) })}
+            {/* {skills.map((sk, index) => (
+          <li key={index}>{sk}</li>
+        ))} */}
+          </ul>
+         {/* </div> */}
+         {/* </div> */}
+         </motion.div>
+    
   );
 };
- 
+
 export default SkillsCard;
