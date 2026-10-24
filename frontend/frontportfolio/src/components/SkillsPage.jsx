@@ -91,7 +91,7 @@ const SkillsPage = () => {
             </div>
           </div>
           {/* </div> */}
-          <div className="cardDiv  grid grid-cols-3 gap-5 justify-items-center relative  ">
+          <div className="cardDiv   grid grid-cols-3 gap-5 justify-items-center relative  ">
             {/* <div className="flex justify-around mt-5">
          <SkillsCard/>
          <SkillsCard/>
@@ -104,12 +104,15 @@ const SkillsPage = () => {
          <SkillsCard/>
             </div> */}
             {skillsData.map((item) => (
+              <div className=" rounded-2xl ">
+
               <SkillsCard
                 key={item.title}
                 title={item.title}
                 icon={item.icon}
                 skills={item.skills}
-              />
+                />
+                </div>
             ))}
           </div>
         </div>

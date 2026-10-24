@@ -50,7 +50,7 @@ const AboutMe = () => {
           {/* bottom */}
         </div>
       </div>
-      <div className="bottomContainer flex flex-3 justify-evenly h-50   bg-[#F8F5EE] border border-white/10 items-center">
+      <div className="bottomContainer flex flex-3 justify-evenly h-50   bg-[#F8F3E8 border border-white/10 items-center">
         <div className="p-6">
           <div className="text-2xl font-sans">2+</div>
           <div className="text-xl"> Years of learning</div>
