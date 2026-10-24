@@ -1,54 +1,51 @@
 import React from "react";
 import { motion } from "motion/react";
-import aboutimg from "../images/about.png"
+import aboutimg from "../images/about.png";
 const AboutMe = () => {
   return (
     <>
-   
-    <div className="h-screen">
-      <div className="h-screen flex justify-end flex-col  text-white bg-black">
-
-        <div className=" flex justify-center items-center ">
-        
-          {/* lefti */}
-<motion.div
-    initial={{ opacity: 0, y: 50, scale: 0.95 }}
-    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-    viewport={{ once: false, amount: 0.4 }}
-    transition={{ duration: 0.3, ease: "easeOut" }}
-    whileHover={{ y: -8, scale: 1.02 }}
-    className="flex flex-col w-1/2  relative left-16"
-   
-    >
-            <h1 className="text-2xl font-sans p-5">About me</h1>
-          <div className="p-5">
-
-            <h2 className="text-7xl font-serif ">Your Partner </h2>
-            <h2 className="text-7xl font-serif ">in Building </h2>
-            <h2 className="text-7xl  text-[#1E40AF] font-serif">Digital Solution</h2>
-
-          </div>
-            <div className="text-sans p-5">
-              I'm a Computer Science student and Full Stack Developer passionate
-              about turning ideas into impactful digital experiences. I enjoy
-              solving problems, exploring new technologies, and building modern,
-              user-friendly web applications that combine creativity with
-              functionality.
-            </div>
-            <div  className="flex justify-center items-center">
-
-            <button className="p-5 rounded-3xl h- border-2 hover:bg-[#1E40AF]  border-white">Download Resume</button>
-
-            </div>
+      <div className="h-screen">
+        <div className="h-screen flex justify-end flex-col  text-white bg-black">
+          <div className=" flex justify-center items-center ">
+            {/* lefti */}
+            <motion.div
+              initial={{ opacity: 0, y: 50, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: false, amount: 0.4 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="flex flex-col w-1/2  relative left-16"
+            >
+              <h1 className="text-2xl font-sans p-5">About me</h1>
+              <div className="p-5">
+                <h2 className="text-7xl font-serif ">Your Partner </h2>
+                <h2 className="text-7xl font-serif ">in Building </h2>
+                <h2 className="text-7xl  text-[#1E40AF] font-serif">
+                  Digital Solution
+                </h2>
+              </div>
+              <div className="text-sans p-5">
+                I'm a Computer Science student and Full Stack Developer
+                passionate about turning ideas into impactful digital
+                experiences. I enjoy solving problems, exploring new
+                technologies, and building modern, user-friendly web
+                applications that combine creativity with functionality.
+              </div>
+              <div className="flex justify-center items-center">
+                <button className="p-5 rounded-3xl h- border-2 hover:bg-[#1E40AF]  border-white">
+                  Download Resume
+                </button>
+              </div>
             </motion.div>
-          {/* right */}
-          <div className="  relative  flex justify-center items-center w-1/2">
-          <img className="w-120 h-170" src={aboutimg} alt="" /></div>
+            {/* right */}
+            <div className="  relative  flex justify-center items-center w-1/2">
+              <img className="w-110 h-150" src={aboutimg} alt="" />
+            </div>
+          </div>
+          {/* bottom */}
         </div>
-        {/* bottom */}
       </div>
-    </div>
-     <div className="bottomContainer flex flex-3 justify-evenly h-50   bg-[#F8F5EE] border border-white/10 items-center">
+      <div className="bottomContainer flex flex-3 justify-evenly h-50   bg-[#F8F5EE] border border-white/10 items-center">
         <div className="p-6">
           <div className="text-2xl font-sans">2+</div>
           <div className="text-xl"> Years of learning</div>
@@ -62,7 +59,7 @@ const AboutMe = () => {
           <div className="text-xl">Passion</div>
         </div>
       </div>
-</>
+    </>
   );
 };
 

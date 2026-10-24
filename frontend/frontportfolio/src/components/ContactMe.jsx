@@ -10,10 +10,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "motion/react";
 const ContactMe = () => {
   return (
+   
     <div
 
       style={{ backgroundImage: `URL(${contactMe})` }}
-      className="h-screen flex justify-around text-white"
+      className="min-h-screen w-full flex justify-around text-white bg-[#080B10] bg-cover bg-center bg-no-repeat"
     >
       <motion.div
                 initial={{ opacity: 0, x: -60, scale: 0.95 }}
@@ -52,7 +53,7 @@ const ContactMe = () => {
         </div>
         </div>
 
-        <div className="relative top-15 space-x-5 ">
+        <div className="relative top-15 h-fit space-x-5 ">
            <a
                 href="https://www.linkedin.com/in/nitin-saini-ba1a64354/"
                 target="_blank"
@@ -95,7 +96,7 @@ const ContactMe = () => {
 
       
      
-      <div className="rightDiv  m-auto text-white max-h-fit min-w-fit min-h-fit w-120 p-10 border border-white/10  bg-[#080B10] rounded-2xl "> 
+      <div className="rightDiv  m-auto text-white bg-none  max-h-fit min-h-fit w-120 p-10 border border-white/10  bg-[#080B10] rounded-2xl "> 
         <form className="flex flex-col border border-white/10  p-5 gap-10 rounded-2xl " action="">
       <input placeholder="Enter Name" className="name border focus-within:border-[#1E40AF] outline-none  border-white/10 p-5 rounded-2xl " type="text" />
       <input placeholder="Enter Email " className="email border-2 focus-within:border-[#1E40AF] outline-none p-5 rounded-2xl border-white/10" type="text" />
@@ -105,9 +106,8 @@ const ContactMe = () => {
 
       </div>
         </form>
-
+ </div>
       </div>
-    </div>
   );
 };
 

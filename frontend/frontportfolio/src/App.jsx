@@ -8,33 +8,28 @@ import ContactMe from "./components/ContactMe";
 import SkillsPage from "./components/SkillsPage";
 import ProjectCard from "./components/uiComponents/ProjectCard";
 import ThreeVantaComponent from "./components/ThreeVantaComponent";
+// import QuoteCard from "./components/uiComponents/QuoteCard";
 import QuoteCard from "./components/uiComponents/quoteCard";
 const App = () => {
   return (
     <div>
       <Navbar />
-        
-      <main className="">
-
-   
-        <section id="home" className="scroll-mt-20">
+      <main >
+        <section id="home" className="">
           <HomePage />
         </section>
-        <section id="aboutme" className="scroll-mt-20">
+        <section id="aboutme" className="">
           <AboutMe />
         </section>
-        <section id="skills" className="scroll-mt-20">
+        <section id="skills" className="">
           <SkillsPage />
         </section>
         <QuoteCard/>
-        {/* <section id="certification" className="scroll-mt-20">
-          <CertificationPage />
-        </section> */}
-        <section id="myproject" className="scroll-mt-20">
+        <section id="myproject" className="">
           <MyProjects />
         </section>
 
-        <section id="contactme" className="scroll-mt-20">
+        <section id="contactme" className="">
           <ContactMe />
         </section>
     

@@ -4,10 +4,10 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
  
 const NAV_ITEMS = [
   { label: "Home", id: "home" },
+  { label: "About Me", id: "aboutme" },
   { label: "Skills", id: "skills" },
   { label: "Certifications", id: "certification" },
   { label: "Projects", id: "myproject" },
-  { label: "About us", id: "aboutme" },
   { label: "Contact us", id: "contactme" },
 ];
  
@@ -21,6 +21,13 @@ const Navbar = () => {
     setMenuOpen(false);
   };
  
+
+//   const scrollToSection = (id)=>{
+//     document.getElementById(id)?.scrollIntoView({
+//       behavior:"smooth",
+//     })
+// setMenuOpen(false);
+//   }
   return (
     <div>
       <div
@@ -47,10 +54,11 @@ const Navbar = () => {
  
         {/* right section - resume button, desktop only */}
         <div  className="hidden md:flex group relative h-10 w-28 lg:w-30 overflow-hidden border-2 border-black rounded-2xl justify-center items-center cursor-pointer ">
-          <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+          <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-300 "></span>
           <a
             href="./resume.pdf"
-            className="relative z-10 font-medium text-base lg:text-xl text-black group-hover:text-white transition-colors duration-300"
+            
+            className="relative  z-10 font-medium text-base lg:text-xl text-black group-hover:text-white transition-colors duration-300"
           >
             Resume
           </a>

@@ -76,3 +76,7 @@ Full Stack Developer
 GitHub: `https://github.com/your-username`
 
 LinkedIn: `https://linkedin.com/in/your-profile`
+
+
+
+<!-- add the project section, height width adjut,front image -->

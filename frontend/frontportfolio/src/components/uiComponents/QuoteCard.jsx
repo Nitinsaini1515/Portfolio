@@ -3,15 +3,15 @@ import quoteImage from "../../images/quoteImage.png";
 import { motion } from "motion/react";
 const QuoteCard = () => {
   return (
-    <>
-      <div className="container h-170 flex justify-around items-center bg-[#F8F3E8]">
+    <div className="h-screen">
+      <div className="w-full min-h-screen flex justify-around items-center bg-[#F8F3E8] px-10 gap-10]">
         <motion.div
           initial={{ opacity: 0, y: 50, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: false, amount: 0.4 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
          
-          className="left w-160  "
+          className="left w-1/2"
         >
           <div className="quoteDiv font-serif text-9xl text-[#1E40AF] ">“</div>
           <h2 className="font-serif text-6xl">
@@ -23,7 +23,7 @@ const QuoteCard = () => {
           <img src={quoteImage} alt="" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
