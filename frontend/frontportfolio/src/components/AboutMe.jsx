@@ -5,8 +5,8 @@ const AboutMe = () => {
   return (
     <>
       <div className="h-screen">
-        <div className="h-screen flex justify-end flex-col  text-white bg-black">
-          <div className=" flex justify-center items-center ">
+        <div className="h-screen flex flex-col   text-white bg-black">
+          <div className=" flex justify-center h-screen items-center ">
             {/* lefti */}
             <motion.div
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
@@ -14,7 +14,7 @@ const AboutMe = () => {
               viewport={{ once: false, amount: 0.4 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="flex flex-col w-1/2  relative left-16"
+              className="flex flex-col w-1/2 relative left-30"
             >
               <h1 className="text-2xl font-sans p-5">About me</h1>
               <div className="p-5">
@@ -38,9 +38,14 @@ const AboutMe = () => {
               </div>
             </motion.div>
             {/* right */}
-            <div className="  relative  flex justify-center items-center w-1/2">
+            <motion.div 
+               initial={{ opacity: 0, x: -50, scale: 0.95 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          viewport={{ once: false, amount: 0.4 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+            className="  relative  flex justify-center items-center w-1/2">
               <img className="w-110 h-150" src={aboutimg} alt="" />
-            </div>
+            </motion.div>
           </div>
           {/* bottom */}
         </div>
